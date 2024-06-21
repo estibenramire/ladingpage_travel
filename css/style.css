@@ -1,0 +1,149 @@
+/*Css reset*/
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  /* inialize css page */
+
+
+
+  /* header and nav */
+
+.header_container{
+    min-height: 113px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid red; */
+}
+
+.header_nav{
+    list-style-type: none;
+    width: 428px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    /* border: 1px solid blue; */
+  
+}
+
+
+.header_nav li {
+    margin-right: 20px;
+}
+
+.header_nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+.header_nav li a:hover{
+    color:blue;
+}
+
+.button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+
+.buttons{
+    width: 220px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.button--primary {
+    width: 105px;
+    height: 45px;
+}
+
+.button--login{
+    background-color: white;
+    font-weight: 900;
+
+}
+.button--signup{
+    background-color:#5D50C6;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/* main section */
+
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.principal__letters{
+    border: 1px solid red;
+    width: 427px;
+}
+
+
+.principal__button{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    gap: 10px;
+    width: 50%;
+    
+}
+
+.principal__button span{
+    color: #F85E9F;
+}
