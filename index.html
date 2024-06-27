@@ -1,65 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi primera página web</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/logos/logo.png"
+            type="image/x-icon"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página web</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-    <div class="header_container">
-        <header class="header">
-            <img src="logo.png" alt="logo" class="header__img">
-        </header>
-        <nav>
-            <ul class="header_nav">
-                <li>
-                    <a href="/Home">Home</a>
-                </li>
-                <li>
-                    <a href="/Home">Discovery</a>
-                </li>
-                <li>
-                    <a href="/Home">Special Deals</a>
-                </li>
-                <li>
-                    <a href="/Home">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="buttons">
-            <button class="button button--primary button--login">Log in</button>
-            <button class="button button--primary button--signup">Sign Up</button>
-        </div>
-    </div>
-
-
-    <main>
-
-        <div class="principal">
-            <div class="principal__letters">
-                <a  href="./segundapagina.html" class="principal__button">
-                    <span>Explore the world!</span>
-                    <img src="./img/icons/Vector.svg" alt="icon">
-                </a>
-                <h1 class="principal__title">Travel <span style="color: #F85E9F">Top destination</span> of the world</h1>
-                <p class="principal__description"> We always make our customer happy by providing as many choices as possible</p>
-                <div class="principal__actions">
-                    <button  class="principal__actions--started">Get started</button>
-                    <button class="principal__actions--watch">Watch Demo</button>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="logo.png" alt="logo" class="header__img" />
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="/Home" class="header__nav-link">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/Home" class="header__nav-link"
+                                >Discovery</a
+                            >
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="/Home" class="header__nav-link"
+                                >Special Deals</a
+                            >
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#services" class="header__nav-link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <a class="header__button button--login">Log in</a>
+                    <a class="header__button button--signup"> Sign Up </a>
                 </div>
-            </div>
-            <div class="principal__images">
-                <img src="./img/principal.jpg" alt="">
-                <h1>ESta es la segunda lineas</h1>
-            </div>
+            </header>
+
+            <main>
+                <section class="welcome-section">
+                    <div class="welcome-section__text">
+                        <a
+                            href="./segundapagina.html"
+                            class="welcome-section__button"
+                        >
+                            <span>Explore the world!</span>
+                            <img src="./img/icons/Vector.svg" alt="icon" />
+                        </a>
+                        <h1 class="welcome-section__title">
+                            Travel
+                            <span>Top destination</span>
+                            of the world
+                        </h1>
+                        <p class="welcome-section__description">
+                            We always make our customer happy by providing as
+                            many choices as possible
+                        </p>
+                        <div class="welcome-section__actions">
+                            <a
+                                class="welcome-section__action welcome-section__action--started"
+                                >Get started</a
+                            >
+                            <a
+                                class="welcome-section__action welcome-section__action--watch"
+                            >
+                                <img src="./img/icons/play.svg" alt="icon" />
+                                <span>Watch Demo</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="welcome-section__images">
+                        <div class="welcome-section__images-left">
+                            <div class="welcome-section__images-left-container">
+                                <div
+                                    class="welcome-section__images-left-image1"
+                                >
+                                    <img
+                                        src="./img/principals/left1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <img
+                                    src="./img/icons/send.svg"
+                                    alt="send"
+                                    class="welcome-section__images-icon"
+                                />
+                            </div>
+
+                            <div class="welcome-section__images-left-image2">
+                                <img src="./img/principals/left2.png" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="welcome-section__images-right">
+                            <div class="welcome-section__images-right-image1">
+                                <img src="./img/principals/right1.png" alt="" />
+                            </div>
+                            <img
+                                src="./img/icons/topplaces.svg"
+                                alt="send"
+                                class="welcome-section__images-topplaces"
+                            />
+
+                            <img
+                                src="./img/icons//adduser.svg"
+                                alt="send"
+                                class="welcome-section__images-adduser"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="partners-section">
+                    <div class="partners-section__imgs">
+                        <div class="partners-section__img">
+                            <img src="./img/logos/tripadvisor.svg" alt="" />
+                        </div>
+                        <div class="partners-section__img">
+                            <img src="./img/logos/expedia.svg" alt="" />
+                        </div>
+                        <div class="partners-section__img">
+                            <img src="./img/logos/booking.svg" alt="" />
+                        </div>
+                        <div class="partners-section__img">
+                            <img src="./img/logos/airbnb.svg" alt="" />
+                        </div>
+                        <div class="partners-section__img">
+                            <img src="./img/logos/orbiz.svg" alt="" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services-section">
+                    <div class="services-section__titles">
+                        <h3>Service</h3>
+                        <h2>
+                            Our top value <br />
+                            categories for you
+                        </h2>
+                    </div>
+                    <div class="sevices-section__cards">
+                        <div class="sevices-section__card">
+                            <img
+                                src="./img/icons/service-section/destination.svg"
+                                alt="destination-icon"
+                            />
+                            <div class="services-section__card-text">
+                                <h3>Best Tour Guide</h3>
+                                <p>
+                                    What looked like a small patch of purple
+                                    grass, above five feet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sevices-section__card">
+                            <img
+                                src="./img/icons/service-section/booking.svg"
+                                alt="booking-icon"
+                            />
+                            <div class="services-section__card-text">
+                                <h3>Easy Booking</h3>
+                                <p>
+                                    Square, was moving across the sand in their
+                                    direction.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sevices-section__card">
+                            <img
+                                src="./img/icons/service-section/cloudy.svg"
+                                alt="cloudy-icon"
+                            />
+                            <div class="services-section__card-text">
+                                <h3>Weather Forecast</h3>
+                                <p>
+                                    What looked like a small patch of purple
+                                    grass, above five feet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services-destinations">
+                    <div class="services-destinations__header">
+                        <div class="services-destinations__header-text">
+                            <h3>Top destination</h3>
+                            <h2>Explore top destination</h2>
+                        </div>
+                        <div
+                            class="services-destinations__header-buttons destinations"
+                        >
+                            <div class="destinations_button">
+                                <img src="./img/icons/left_arrow.svg" alt="" />
+                            </div>
+                            <div class="destinations_button">
+                                <img src="./img/icons/right_arrow.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-destinations__cards">
+                        <div class="services-destinations__card"></div>
+                        <div class="services-destinations__card"></div>
+                        <div class="services-destinations__card"></div>
+                    </div>
+
+                </section>
+            </main>
+
+            <footer>Footer</footer>
         </div>
-
-    </main>
-
-
-</body>
-
+    </body>
 </html>
